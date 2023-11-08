@@ -15,6 +15,11 @@ sf::Texture npc_texture;
 sf::Sprite player_sprite;
 sf::Sprite npc_sprite;
 
+sf::CircleShape playerCircle(20);
+sf::CircleShape enemyCircle(20);
+enemyCircle.setFillColor(sf::Color(250, 150, 100));
+playerCircle.setFillColor(sf::Color(100, 250, 50));
+
 Game::Game(){}
 
 void Game::initialize()
